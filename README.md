@@ -31,7 +31,7 @@
 1. Првиот тест случај треба да ги изврши сите statements во главниот дел од кодот
 2. Вториот тест случај треба да ги изврши statements во делот за валидација на картичката
 
-Тест случај 1: Валиден предмет со попуст
+**Тест случај 1: Валиден предмет со попуст**
 ```java
 List<Item> items = new ArrayList<>();
 items.add(new Item("Item1", 5, 400, 0.1));
@@ -48,7 +48,7 @@ double result = checkCart(items, cardNumber);
 - Пресметка на вкупната сума
 - Валидација на бројот на картичката
 
-### Тест случај 2: Валиден предмет без попуст
+**Тест случај 2: Валиден предмет без попуст**
 ```java
 List<Item> items = new ArrayList<>();
 items.add(new Item("Item2", 3, 200, 0)); 
@@ -75,7 +75,7 @@ double result = checkCart(items, cardNumber);
 
 За условот `if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)`, според Multiple Condition критериумот потребни се 4 тест случаи. Ова е затоа што имаме 3 услови поврзани со OR оператор, и според Multiple Condition критериумот потребни се n+1 тест случаи, каде n е бројот на услови.
 
-### Тест случај 1: Сите услови се false
+**Тест случај 1: Сите услови се false**
 ```java
 List<Item> items = new ArrayList<>();
 items.add(new Item("Item1", 5, 200, 0)); // price <= 300, discount = 0, quantity <= 10
@@ -84,7 +84,7 @@ double result = checkCart(items, cardNumber);
 // Очекуван резултат: 1000.0 (200 * 5)
 ```
 
-### Тест случај 2: Првиот услов е true
+**Тест случај 2: Првиот услов е true**
 ```java
 List<Item> items = new ArrayList<>();
 items.add(new Item("Item2", 5, 400, 0)); // price > 300, discount = 0, quantity <= 10
@@ -93,7 +93,7 @@ double result = checkCart(items, cardNumber);
 // Очекуван резултат: 1970.0 (400 * 5 - 30)
 ```
 
-### Тест случај 3: Вториот услов е true
+**Тест случај 3: Вториот услов е true**
 ```java
 List<Item> items = new ArrayList<>();
 items.add(new Item("Item3", 5, 200, 0.1)); // price <= 300, discount > 0, quantity <= 10
@@ -102,7 +102,7 @@ double result = checkCart(items, cardNumber);
 // Очекуван резултат: 870.0 (200 * 0.9 * 5 - 30)
 ```
 
-### Тест случај 4: Третиот услов е true
+**Тест случај 4: Третиот услов е true**
 ```java
 List<Item> items = new ArrayList<>();
 items.add(new Item("Item4", 15, 200, 0)); // price <= 300, discount = 0, quantity > 10
