@@ -2,11 +2,11 @@
 
 Марија Дујмовиќ, бр. на индекс 123061
 
-2. Control Flow Graph за функцијата checkCart
+## 2. Control Flow Graph за функцијата checkCart
 
 ![Diagram](diagram.png)
 
-3. Цикломатска комплексност
+## 3. Цикломатска комплексност
 
 Цикломатската комплексност на функцијата `checkCart` е 8. Ова се пресметува на следниов начин:
  Број на условни изрази (if statements):
@@ -71,7 +71,7 @@ double result = checkCart(items, cardNumber);
 4. Сите валидации на картичката
 5. Сите return statements
 
-5. Тест случаи според Multiple Condition критериумот
+## 5. Тест случаи според Multiple Condition критериумот
 
 За условот `if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)`, според Multiple Condition критериумот потребни се 4 тест случаи. Ова е затоа што имаме 3 услови поврзани со OR оператор, и според Multiple Condition критериумот потребни се n+1 тест случаи, каде n е бројот на услови.
 
