@@ -119,5 +119,3 @@ double result = checkCart(items, cardNumber);
 
 Со овие 4 тест случаи се опфатени сите можни комбинации на услови според Multiple Condition критериумот.
 
-4.  
-
